@@ -93,9 +93,10 @@
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label1.Location = new System.Drawing.Point(343, 406);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 20);
+            this.label1.Size = new System.Drawing.Size(185, 20);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Doesn\'t have an account?";
+            this.label1.Text = "Don\'t have an account?";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 

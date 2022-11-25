@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace WireFrames
 {
-    public partial class Form2 : Form
+    public partial class Form7 : Form
     {
-        public Form2()
+        public Form7()
         {
             InitializeComponent();
         }
 
-        private void pointsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

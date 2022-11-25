@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace WireFrames
 {
-    public partial class Form2 : Form
+    public partial class Form6 : Form
     {
-        public Form2()
+        public Form6()
         {
             InitializeComponent();
         }
 
-        private void pointsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
         {
 
         }

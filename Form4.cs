@@ -66,6 +66,12 @@ namespace WireFrames
             }
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form10 form10 = new Form10();
+            form10.Show();
+            this.Hide();
+        }
     }
     
 }

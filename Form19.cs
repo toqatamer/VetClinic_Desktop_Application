@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.ComponentModel.DataAnnotations;
+using System.Reflection.Emit;
 
 namespace WireFrames
 {
@@ -26,10 +28,51 @@ namespace WireFrames
             nurseAddPatient.PetName = textBox2.Text;
             nurseAddPatient.PetGender = comboBox1.Text;
             nurseAddPatient.Allergies = textBox1.Text;
+            nurseAddPatient.Allergies = comboBox3.Text;
+            nurseAddPatient.PrevDiseases = comboBox4.Text;
             nurseAddPatient.PrevDiseases = textBox6.Text;
             nurseAddPatient.Weight = textBox5.Text;
             nurseAddPatient.Height = textBox3.Text;
             nurseAddPatient.Age = textBox4.Text;
+
+            ValidationContext validationContext = new ValidationContext(nurseAddPatient);
+            IList<ValidationResult> errors = new List<ValidationResult>();
+            if (!Validator.TryValidateObject(nurseAddPatient, validationContext, errors, true))
+            {
+                foreach (var item in errors)
+                {
+                    switch (item.MemberNames.First())
+                    {
+                        case "PetType":
+                            {
+                                label11.Text = item.ErrorMessage;
+                                break;
+                            }
+                        case "PetName":
+                            {
+                                label12.Text = item.ErrorMessage;
+                                break;
+                            }
+                        case "PetGender":
+                            label13.Text = item.ErrorMessage; break;
+                        case "Weight":
+                            label14.Text = item.ErrorMessage; break;
+                        case "Height":
+                            label15.Text = item.ErrorMessage; break;
+                        case "Age":
+                            label16.Text = item.ErrorMessage; break;
+                        case "Birthday":
+                            label17.Text = item.ErrorMessage; break;
+
+
+                        default:
+                            MessageBox.Show(item.ErrorMessage);
+                            break;
+
+                    }
+                }
+            }
+
             string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
@@ -58,7 +101,32 @@ namespace WireFrames
                 }
 
             }
+            Form24 form24 = new Form24();
+            form24.Show();
+            this.Hide();
 
             }
+
+        private void Form19_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+ 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form10 form10 = new Form10();
+            form10.Show();
+            this.Hide();
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

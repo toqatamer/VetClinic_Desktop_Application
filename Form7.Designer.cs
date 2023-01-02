@@ -65,7 +65,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label11.Location = new System.Drawing.Point(454, 42);
+            this.label11.Location = new System.Drawing.Point(418, 43);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(291, 32);
             this.label11.TabIndex = 27;
@@ -126,7 +126,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label13.Location = new System.Drawing.Point(419, 198);
+            this.label13.Location = new System.Drawing.Point(341, 208);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(126, 29);
             this.label13.TabIndex = 21;
@@ -137,11 +137,11 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label14.Location = new System.Drawing.Point(419, 144);
+            this.label14.Location = new System.Drawing.Point(334, 151);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(137, 29);
+            this.label14.Size = new System.Drawing.Size(231, 29);
             this.label14.TabIndex = 20;
-            this.label14.Text = "National ID:";
+            this.label14.Text = "Owner\'s National ID:";
             // 
             // label1
             // 

@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form22));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -39,53 +41,38 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.petIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subjectiveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.objectiveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.assessmentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.planDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.drsoapBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.veterinary_clinicDataSet18 = new WireFrames.veterinary_clinicDataSet18();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.petIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.creditDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nurseAddCreditBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.veterinary_clinicDataSet19 = new WireFrames.veterinary_clinicDataSet19();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.dr_soapTableAdapter = new WireFrames.veterinary_clinicDataSet18TableAdapters.Dr_soapTableAdapter();
             this.nurseAddCreditTableAdapter = new WireFrames.veterinary_clinicDataSet19TableAdapters.NurseAddCreditTableAdapter();
+            this.veterinary_clinicDataSet22 = new WireFrames.veterinary_clinicDataSet22();
+            this.eMRBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eMRTableAdapter = new WireFrames.veterinary_clinicDataSet22TableAdapters.EMRTableAdapter();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.drsoapBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veterinary_clinicDataSet18)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nurseAddCreditBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veterinary_clinicDataSet19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.veterinary_clinicDataSet22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMRBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(0, -1);
             this.tabControl1.Name = "tabControl1";
@@ -96,6 +83,10 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Linen;
+            this.tabPage1.Controls.Add(this.label9);
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Controls.Add(this.pictureBox3);
             this.tabPage1.Controls.Add(this.comboBox2);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.button1);
@@ -110,10 +101,32 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Home";
             // 
+            // button4
+            // 
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.Location = new System.Drawing.Point(0, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(29, 23);
+            this.button4.TabIndex = 19;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Tan;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(147, 419);
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
+            // 
             // comboBox2
             // 
+            this.comboBox2.DataSource = this.eMRBindingSource;
+            this.comboBox2.DisplayMember = "PetID";
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(431, 166);
+            this.comboBox2.Location = new System.Drawing.Point(379, 166);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 24);
             this.comboBox2.TabIndex = 13;
@@ -124,11 +137,11 @@
             this.label7.BackColor = System.Drawing.Color.Linen;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label7.Location = new System.Drawing.Point(142, 166);
+            this.label7.Location = new System.Drawing.Point(174, 166);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 25);
+            this.label7.Size = new System.Drawing.Size(71, 25);
             this.label7.TabIndex = 12;
-            this.label7.Text = "ID:";
+            this.label7.Text = "Pet ID:";
             // 
             // button1
             // 
@@ -140,6 +153,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Book consultation";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -167,7 +181,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label4.Location = new System.Drawing.Point(140, 206);
+            this.label4.Location = new System.Drawing.Point(174, 206);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(155, 29);
             this.label4.TabIndex = 8;
@@ -175,90 +189,10 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(431, 206);
+            this.dateTimePicker1.Location = new System.Drawing.Point(379, 206);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(238, 22);
             this.dateTimePicker1.TabIndex = 7;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.Linen;
-            this.tabPage2.Controls.Add(this.dataGridView1);
-            this.tabPage2.Controls.Add(this.comboBox1);
-            this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(793, 425);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Appointment";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.petIDDataGridViewTextBoxColumn,
-            this.subjectiveDataGridViewTextBoxColumn,
-            this.objectiveDataGridViewTextBoxColumn,
-            this.assessmentDataGridViewTextBoxColumn,
-            this.planDataGridViewTextBoxColumn,
-            this.dateDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.drsoapBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 47);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(789, 363);
-            this.dataGridView1.TabIndex = 11;
-            // 
-            // petIDDataGridViewTextBoxColumn
-            // 
-            this.petIDDataGridViewTextBoxColumn.DataPropertyName = "PetID";
-            this.petIDDataGridViewTextBoxColumn.HeaderText = "PetID";
-            this.petIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.petIDDataGridViewTextBoxColumn.Name = "petIDDataGridViewTextBoxColumn";
-            this.petIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // subjectiveDataGridViewTextBoxColumn
-            // 
-            this.subjectiveDataGridViewTextBoxColumn.DataPropertyName = "Subjective";
-            this.subjectiveDataGridViewTextBoxColumn.HeaderText = "Subjective";
-            this.subjectiveDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.subjectiveDataGridViewTextBoxColumn.Name = "subjectiveDataGridViewTextBoxColumn";
-            this.subjectiveDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // objectiveDataGridViewTextBoxColumn
-            // 
-            this.objectiveDataGridViewTextBoxColumn.DataPropertyName = "Objective";
-            this.objectiveDataGridViewTextBoxColumn.HeaderText = "Objective";
-            this.objectiveDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.objectiveDataGridViewTextBoxColumn.Name = "objectiveDataGridViewTextBoxColumn";
-            this.objectiveDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // assessmentDataGridViewTextBoxColumn
-            // 
-            this.assessmentDataGridViewTextBoxColumn.DataPropertyName = "Assessment";
-            this.assessmentDataGridViewTextBoxColumn.HeaderText = "Assessment";
-            this.assessmentDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.assessmentDataGridViewTextBoxColumn.Name = "assessmentDataGridViewTextBoxColumn";
-            this.assessmentDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // planDataGridViewTextBoxColumn
-            // 
-            this.planDataGridViewTextBoxColumn.DataPropertyName = "Plan__";
-            this.planDataGridViewTextBoxColumn.HeaderText = "Plan__";
-            this.planDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.planDataGridViewTextBoxColumn.Name = "planDataGridViewTextBoxColumn";
-            this.planDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.dateDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            this.dateDataGridViewTextBoxColumn.Width = 125;
             // 
             // drsoapBindingSource
             // 
@@ -270,70 +204,6 @@
             this.veterinary_clinicDataSet18.DataSetName = "veterinary_clinicDataSet18";
             this.veterinary_clinicDataSet18.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.DisplayMember = "PetID";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(414, 20);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 10;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label8.Location = new System.Drawing.Point(25, 15);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(325, 29);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "View your latest appoitments:";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.Linen;
-            this.tabPage3.Controls.Add(this.dataGridView2);
-            this.tabPage3.Controls.Add(this.pictureBox2);
-            this.tabPage3.Controls.Add(this.textBox3);
-            this.tabPage3.Controls.Add(this.label1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(793, 425);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Wallet";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.petIDDataGridViewTextBoxColumn1,
-            this.creditDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.nurseAddCreditBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(382, 226);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView2.TabIndex = 10;
-            // 
-            // petIDDataGridViewTextBoxColumn1
-            // 
-            this.petIDDataGridViewTextBoxColumn1.DataPropertyName = "PetID";
-            this.petIDDataGridViewTextBoxColumn1.HeaderText = "PetID";
-            this.petIDDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.petIDDataGridViewTextBoxColumn1.Name = "petIDDataGridViewTextBoxColumn1";
-            this.petIDDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // creditDataGridViewTextBoxColumn
-            // 
-            this.creditDataGridViewTextBoxColumn.DataPropertyName = "Credit";
-            this.creditDataGridViewTextBoxColumn.HeaderText = "Credit";
-            this.creditDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.creditDataGridViewTextBoxColumn.Name = "creditDataGridViewTextBoxColumn";
-            this.creditDataGridViewTextBoxColumn.Width = 125;
-            // 
             // nurseAddCreditBindingSource
             // 
             this.nurseAddCreditBindingSource.DataMember = "NurseAddCredit";
@@ -344,38 +214,10 @@
             this.veterinary_clinicDataSet19.DataSetName = "veterinary_clinicDataSet19";
             this.veterinary_clinicDataSet19.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(49, 48);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(261, 235);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(380, 164);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(363, 22);
-            this.textBox3.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Linen;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(377, 121);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 29);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Available credit:";
-            // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.Linen;
+            this.tabPage4.Controls.Add(this.button3);
             this.tabPage4.Controls.Add(this.label2);
             this.tabPage4.Controls.Add(this.label3);
             this.tabPage4.Controls.Add(this.button2);
@@ -384,6 +226,17 @@
             this.tabPage4.Size = new System.Drawing.Size(793, 425);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Help";
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(0, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(29, 23);
+            this.button3.TabIndex = 17;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label2
             // 
@@ -426,6 +279,36 @@
             // 
             this.nurseAddCreditTableAdapter.ClearBeforeFill = true;
             // 
+            // veterinary_clinicDataSet22
+            // 
+            this.veterinary_clinicDataSet22.DataSetName = "veterinary_clinicDataSet22";
+            this.veterinary_clinicDataSet22.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // eMRBindingSource
+            // 
+            this.eMRBindingSource.DataMember = "EMR";
+            this.eMRBindingSource.DataSource = this.veterinary_clinicDataSet22;
+            // 
+            // eMRTableAdapter
+            // 
+            this.eMRTableAdapter.ClearBeforeFill = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(506, 173);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 16);
+            this.label6.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(528, 173);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(0, 16);
+            this.label9.TabIndex = 21;
+            // 
             // Form22
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -438,20 +321,16 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.drsoapBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.veterinary_clinicDataSet18)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nurseAddCreditBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.veterinary_clinicDataSet19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.veterinary_clinicDataSet22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMRBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -460,8 +339,6 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label7;
@@ -470,29 +347,22 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
         private veterinary_clinicDataSet18 veterinary_clinicDataSet18;
         private System.Windows.Forms.BindingSource drsoapBindingSource;
         private veterinary_clinicDataSet18TableAdapters.Dr_soapTableAdapter dr_soapTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn petIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn subjectiveDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn objectiveDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn assessmentDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn planDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
         private veterinary_clinicDataSet19 veterinary_clinicDataSet19;
         private System.Windows.Forms.BindingSource nurseAddCreditBindingSource;
         private veterinary_clinicDataSet19TableAdapters.NurseAddCreditTableAdapter nurseAddCreditTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn petIDDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn creditDataGridViewTextBoxColumn;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private veterinary_clinicDataSet22 veterinary_clinicDataSet22;
+        private System.Windows.Forms.BindingSource eMRBindingSource;
+        private veterinary_clinicDataSet22TableAdapters.EMRTableAdapter eMRTableAdapter;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label6;
     }
 }

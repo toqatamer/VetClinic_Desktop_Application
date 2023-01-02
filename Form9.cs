@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -54,6 +55,32 @@ namespace WireFrames
             soap.Plan__ = richTextBox2.Text;
             soap.Date = dateTimePicker1.Text;
 
+            ValidationContext validationContext = new ValidationContext(soap);
+            IList<ValidationResult> errors = new List<ValidationResult>();
+            if (!Validator.TryValidateObject(soap, validationContext, errors, true))
+            {
+                foreach (var item in errors)
+                {
+                    switch (item.MemberNames.First())
+                    {
+                        case "PetID":
+                            {
+                                label9.Text = item.ErrorMessage;
+                                break;
+                            }
+                        case "Subjective":
+                            {
+                                label10.Text = item.ErrorMessage;
+                                break;
+                            }
+                        default:
+                            MessageBox.Show(item.ErrorMessage);
+                            break;
+
+                    }
+                }
+            }
+
             string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
             using (SqlConnection sqlcon = new SqlConnection(conStr))
             {
@@ -80,6 +107,13 @@ namespace WireFrames
 
 
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form17 form17 = new Form17();
+            form17.Show();
+            this.Close();
         }
     }
 }

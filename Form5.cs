@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -44,8 +45,37 @@ namespace WireFrames
         {
 
             PatientXRay patientXRay = new PatientXRay();
-            patientXRay.PetID = comboBox1.Text;
+            patientXRay.PetID = comboBox2.Text;
             patientXRay.ChooseTime = dateTimePicker1.Text;
+
+            ValidationContext validationContext = new ValidationContext(patientXRay);
+            IList<ValidationResult> errors = new List<ValidationResult>();
+            if (!Validator.TryValidateObject(patientXRay, validationContext, errors, true))
+            {
+                foreach (var item in errors)
+                {
+                    switch (item.MemberNames.First())
+                    {
+                        case "PetID":
+                            {
+                                label7.Text = item.ErrorMessage;
+                                break;
+                            }
+                        case "ChooseTime":
+                            {
+                                label10.Text = item.ErrorMessage;
+                                break;
+                            }
+                        case "xray":
+                            label11.Text = item.ErrorMessage;
+                            break;
+                        default:
+                            MessageBox.Show(item.ErrorMessage);
+                            break;
+
+                    }
+                }
+            }
 
             string conStr = ConfigurationManager.ConnectionStrings["db"].ToString();
             using (SqlConnection sqlcon = new SqlConnection(conStr))
@@ -70,11 +100,21 @@ namespace WireFrames
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            BindingSource bs = new BindingSource();
-            bs.DataSource = dataGridView1.DataSource;
-            bs.Filter = "[database column Name To Search] like '%" + comboBox1.Text + "%'";
-            dataGridView1.DataSource = bs;
+        
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
         }
     }
 }

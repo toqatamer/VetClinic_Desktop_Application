@@ -27,6 +27,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -55,7 +57,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Downloads\clinical\Database integration\WindowsFormsAppDB\packages\MySql.Data.8.0.31\lib\netstandard2.0\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Patagames.Ocr, Version=4.5.2.472, Culture=neutral, PublicKeyToken=be14d8e1fe46e570, processorArchitecture=MSIL">
+      <HintPath>packages\Tesseract.Net.SDK.4.5.411\lib\net472\Patagames.Ocr.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.ConfigurationManager, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Configuration.ConfigurationManager.7.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
@@ -63,6 +72,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Drawing.Common.5.0.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net" />
     <Reference Include="System.Security" />
     <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -160,12 +172,6 @@
     <Compile Include="Form17.Designer.cs">
       <DependentUpon>Form17.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form18.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form18.Designer.cs">
-      <DependentUpon>Form18.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form19.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,17 +184,29 @@
     <Compile Include="Form20.Designer.cs">
       <DependentUpon>Form20.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form21.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form21.Designer.cs">
-      <DependentUpon>Form21.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form22.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form22.Designer.cs">
       <DependentUpon>Form22.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form23.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form23.Designer.cs">
+      <DependentUpon>Form23.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form24.Designer.cs">
+      <DependentUpon>Form24.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
     <Compile Include="Form4.cs">
       <SubType>Form</SubType>
@@ -240,6 +258,7 @@
     <Compile Include="PatientSignIn.cs" />
     <Compile Include="PatientXRay.cs" />
     <Compile Include="Pharmacy.cs" />
+    <Compile Include="Prescription.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.cs" />
@@ -309,6 +328,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>veterinary_clinicDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="veterinary_clinicDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>veterinary_clinicDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="veterinary_clinicDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>veterinary_clinicDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="veterinary_clinicDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>veterinary_clinicDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="veterinary_clinicDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>veterinary_clinicDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="veterinary_clinicDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>veterinary_clinicDataSet24.xsd</DependentUpon>
+    </Compile>
     <Compile Include="veterinary_clinicDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -376,20 +420,23 @@
     <EmbeddedResource Include="Form17.resx">
       <DependentUpon>Form17.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form18.resx">
-      <DependentUpon>Form18.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form19.resx">
       <DependentUpon>Form19.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form20.resx">
       <DependentUpon>Form20.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form21.resx">
-      <DependentUpon>Form21.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form22.resx">
       <DependentUpon>Form22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form23.resx">
+      <DependentUpon>Form23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form24.resx">
+      <DependentUpon>Form24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
@@ -441,6 +488,24 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="tessdata\configs\config.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="tessdata\eng.traineddata">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="tessdata\equ.traineddata">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="tessdata\osd.traineddata">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="tessdata\pdf.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="tessdata\pdf.ttx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="veterinary_clinicDataSet.xsc">
       <DependentUpon>veterinary_clinicDataSet.xsd</DependentUpon>
     </None>
@@ -584,6 +649,61 @@
     <None Include="veterinary_clinicDataSet2.xss">
       <DependentUpon>veterinary_clinicDataSet2.xsd</DependentUpon>
     </None>
+    <None Include="veterinary_clinicDataSet20.xsc">
+      <DependentUpon>veterinary_clinicDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="veterinary_clinicDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>veterinary_clinicDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="veterinary_clinicDataSet20.xss">
+      <DependentUpon>veterinary_clinicDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="veterinary_clinicDataSet21.xsc">
+      <DependentUpon>veterinary_clinicDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="veterinary_clinicDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>veterinary_clinicDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="veterinary_clinicDataSet21.xss">
+      <DependentUpon>veterinary_clinicDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="veterinary_clinicDataSet22.xsc">
+      <DependentUpon>veterinary_clinicDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="veterinary_clinicDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>veterinary_clinicDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="veterinary_clinicDataSet22.xss">
+      <DependentUpon>veterinary_clinicDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="veterinary_clinicDataSet23.xsc">
+      <DependentUpon>veterinary_clinicDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="veterinary_clinicDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>veterinary_clinicDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="veterinary_clinicDataSet23.xss">
+      <DependentUpon>veterinary_clinicDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="veterinary_clinicDataSet24.xsc">
+      <DependentUpon>veterinary_clinicDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="veterinary_clinicDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>veterinary_clinicDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="veterinary_clinicDataSet24.xss">
+      <DependentUpon>veterinary_clinicDataSet24.xsd</DependentUpon>
+    </None>
     <None Include="veterinary_clinicDataSet3.xsc">
       <DependentUpon>veterinary_clinicDataSet3.xsd</DependentUpon>
     </None>
@@ -684,7 +804,15 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\1a9facf3f17ba87ed345dff451916a77.png" />
     <Content Include="XMLFile1.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\Tesseract.Net.SDK.4.5.411\build\Tesseract.Net.SDK.targets" Condition="Exists('packages\Tesseract.Net.SDK.4.5.411\build\Tesseract.Net.SDK.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Tesseract.Net.SDK.4.5.411\build\Tesseract.Net.SDK.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Tesseract.Net.SDK.4.5.411\build\Tesseract.Net.SDK.targets'))" />
+  </Target>
 </Project>
